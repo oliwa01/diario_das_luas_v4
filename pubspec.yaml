@@ -1,0 +1,224 @@
+name: diario_das_luas
+description: A new Flutter application.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.3
+  characters: ^1.0.0
+  firebase: ^7.3.0
+  data: ^0.2.0
+  cloud_firestore_web: ^0.1.1+2
+  cloud_firestore: ^0.13.4+2
+  firebase_core: ^0.4.4+3
+  firebase_dart: ^0.7.15+4
+  html: ^0.14.0+3
+  flutter_html: ^0.11.1
+  url_launcher: ^5.7.0
+  flutter_time_picker_spinner: ^1.0.6
+  direct_select_flutter: ^1.0.5
+  firebase_auth: ^0.16.0
+  flutter_webview_plugin: ^0.3.10+1
+  provider: ^4.0.5+1
+  flutter_facebook_login: ^3.0.0
+  font_awesome_flutter: ^8.8.1
+  flutter_focus_watcher: ^0.0.1
+  flutter_device_type: ^0.2.0
+  google_sign_in: ^4.1.1
+  zoom_widget: ^0.1.3
+  intl: ^0.16.1
+  platform_info: ^2.0.1
+  flutter_image_slideshow: ^0.0.1
+  flutter_login_facebook: ^0.2.1+1
+  rflutter_alert: ^1.1.0
+  circular_menu: ^1.1.1
+  floating_action_bubble: ^1.1.2
+  convex_bottom_bar: ^2.6.0
+
+dev_dependencies:
+  build_runner: ^1.8.1
+  build_test: ^1.0.0
+  build_web_compilers: ^2.10.0
+  flutter_test:
+    sdk: flutter
+  mockito: ^4.1.1
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+assets:
+  - assets/images/lp_image.png
+  - assets/images/blank.png
+  - assets/images/logo.png
+  - assets/images/logo2.png
+  - assets/images/foto.png
+  - assets/images/menu.png
+  - assets/images/zooni.png
+  - assets/images/zoono.png
+  - assets/images/dolar.png
+  - assets/images/logo.jpg
+  - assets/images/logofb.png
+  - assets/images/lua-01.png
+  - assets/images/lua-02.png
+  - assets/images/lua-03.png
+  - assets/images/lua-04.png
+  - assets/images/lua-05.png
+  - assets/images/lua-06.png
+  - assets/images/lua-07.png
+  - assets/images/lua-08.png
+  - assets/images/lua-09.png
+  - assets/images/lua-10.png
+  - assets/images/lua-11.png
+  - assets/images/lua-12.png
+  - assets/images/lua-13.png
+  - assets/images/lua-14.png
+  - assets/images/lua-15.png
+  - assets/images/lua-16.png
+  - assets/images/lua-17.png
+  - assets/images/lua-18.png
+  - assets/images/lua-19.png
+  - assets/images/lua-20.png
+  - assets/images/lua-21.png
+  - assets/images/lua-22.png
+  - assets/images/lua-23.png
+  - assets/images/lua-24.png
+  - assets/images/lua-25.png
+  - assets/images/lua-26.png
+  - assets/images/lua-27.png
+  - assets/images/lua-28.png
+  - assets/images/lua-29.png
+  - assets/images/amb-01.jpg
+  - assets/images/amb-02.jpg
+  - assets/images/amb-03.jpg
+  - assets/images/amb-04.jpg
+  - assets/images/amb-05.jpg
+  - assets/images/amb-06.jpg
+  - assets/images/amb-07.jpg
+  - assets/images/amb-08.jpg
+  - assets/images/amb-09.jpg
+  - assets/images/amb-10.jpg
+  - assets/images/amb-11.jpg
+  - assets/images/amb-12.jpg
+  - assets/images/amb-13.jpg
+  - assets/images/amb-14.jpg
+  - assets/images/amb-15.jpg
+  - assets/images/amb-16.jpg
+  - assets/images/amb-17.jpg
+  - assets/images/amb-18.jpg
+  - assets/images/amb-19.jpg
+  - assets/images/amb-20.jpg
+  - assets/images/amb-21.jpg
+  - assets/images/amb-22.jpg
+  - assets/images/amb-23.jpg
+  - assets/images/amb-24.jpg
+  - assets/images/amb-25.jpg
+  - assets/images/amb-26.jpg
+  - assets/images/amb-27.jpg
+  - assets/images/amb-28.jpg
+  - assets/images/amb-29.jpg
+  - assets/images/amb-30.jpg
+  - assets/images/amb-31.jpg
+  - assets/images/amb-32.jpg
+  - assets/images/amb-33.jpg
+  - assets/images/amb-34.jpg
+  - assets/images/amb-35.jpg
+  - assets/images/amb-36.jpg
+  - assets/images/amb-37.jpg
+  - assets/images/amb-38.jpg
+  - assets/images/amb-39.jpg
+  - assets/images/amb-40.jpg
+  - assets/images/amb-41.jpg
+
+  - assets/images/f1.jpg
+  - assets/images/f2.jpg
+  - assets/images/f3.jpg
+  - assets/images/f4.jpg
+  - assets/images/f5.jpg
+  - assets/images/f6.jpg
+  - assets/images/ar.png
+  - assets/images/aq.png
+  - assets/images/ca.png
+  - assets/images/cap.png
+  - assets/images/es.png
+  - assets/images/ge.png
+  - assets/images/le.png
+  - assets/images/li.png
+  - assets/images/pe.png
+  - assets/images/sa.png
+  - assets/images/to.png
+  - assets/images/vi.png
+  - assets/images/ar-to.png
+  - assets/images/aq-pe.png
+  - assets/images/cap-aq.png
+  - assets/images/ca-le.png
+  - assets/images/es-sa.png
+  - assets/images/ge-ca.png
+  - assets/images/le-vi.png
+  - assets/images/li-es.png
+  - assets/images/pe-ar.png
+  - assets/images/sa-ca.png
+  - assets/images/to-ge.png
+  - assets/images/vi-li.png
+  - assets/images/icone1.png
+  - assets/images/icone2.png
+  - assets/images/icone3.png
+  - assets/images/icone4.png
+  - assets/images/icone5.png
+  - assets/images/icone6.png
+  - assets/images/fundo_diario.png
+  - assets/images/luas.gif
+  - assets/images/fundodatas.png
+  - assets/images/iconseta.png
+  - assets/images/calendar.png
+  - assets/images/clock.png
+  - assets/images/person.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+fonts:
+  - family: MaterialIcons
+    fonts:
+      - asset: assets/fonts/MaterialIcons-Regular.ttf
